@@ -12,18 +12,15 @@ body{
    max-width: 708px;
    margin: 0 auto;
    margin-left: 350px;
-   margin-top: -358px;
+   margin-top: 0px;
   
    }
    .junglebird{
-   display: inline-block;
    background: #ebeded;
-   float: none;
    padding: 10px;
    margin: 0 0 10px;
-   height: 350px;
-   width: 280px;
-   box-sizing: border-box;
+   height: 200px;
+   width: 300px;
    border-radius: 5px;
    
 
@@ -63,40 +60,64 @@ body{
     .masonryblocks:nth-child(3n+9){height: 370px;}
     .masonryblocks:nth-child(3n+10){height:200px;}
 
-/* @media screen and (max-width:768px){
-   .masonryholder{
-     column-count: 1;
-   }
-   }*/
 
- @media screen and (max-width:600px){
-   .masonryholder{
-     column-count: 2;
-     margin-top: auto;
-   }
-   .junglebird{
-     display: block;
+   @media (min-width:480px){
+    
+     .junglebird{
+       margin-left: 110px;
+       width: 220px;
+       height: 150px;
+
+     }
+     .masonryholder{
+       margin-left: 50px;
+       column-count: 2;
+     }
      
-     width: 150px;
-     height: 200px;
+   @media (min-width:800px){
+     .main{
+       display:flex;
+       column-count: 4;
      
-     
-       
+     }
+     .junglebird{
+       align-self: flex-start;
+       margin-left: 10px;
+       height: 300px;
+     }
+     .masonryholder{
+       widows: 1200px;
+       column-count:3 ;
      }
    }
-    
-    }
+  
+  
+    /* @media (max-width:480px){
+
+   .main{
+     display: flex;
+     flex-direction: columns;
+         
+   }
+   .junglebird{
+     align-self:start;
+     font-size: xx-small;
+   }
+   .masonryblocks{
+     column-count:2;
+     }
    
 
- @media screen and (min-width:1080px){
-   .masonryholder{
-     column-count: 3;
-   }
-   }
-
- @media screen and (min-width:1200px){
+ @media screen and (max-width:800px){
    .masonryholder{
      column-count: 4;
    }
    }
 
+ /* @media (max-width:1000px){ */
+   /* .masonryholder{ */
+     /* column-count: 4; */
+   /* } */
+   /* } */
+
+   
